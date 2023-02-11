@@ -38,5 +38,7 @@ userSchema.virtual('friendCount').get(function () {
   return this.friends.length;
 });
 
+//bonus content
+//do it later
 
 modeule.exports = User;
