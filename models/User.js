@@ -47,4 +47,5 @@ userSchema.pre("findOneAndDelete", { document: false, query: true }, async funct
     await Thought.deleteMany({ username: doc.username });
 });
 
-modeule.exports = User;
+const User = model('User', userSchema);
+module.exports = User;
